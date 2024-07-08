@@ -42,8 +42,11 @@ function Signup() {
               "https://blog-nest-backend.vercel.app/api/v1/users/register",
               formData,
               {
-                withCredentials: true 
-              }
+        withCredentials: true, // Include credentials (cookies) in the request
+        headers: {
+          'Content-Type': 'application/json'
+        }
+      }
             );
            // console.log(userData)
            console.log("User registered successfully");
