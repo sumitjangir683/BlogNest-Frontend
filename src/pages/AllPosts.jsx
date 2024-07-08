@@ -7,6 +7,7 @@ function AllPosts() {
     const [posts, setPosts] = useState([])
     const dispatch = useDispatch()
     const postStore = useSelector((state) => state.post_store.posts);
+    console.log("sumit in allPosts")
    console.log(postStore);
    const fetchPosts = async() => {
     try {
