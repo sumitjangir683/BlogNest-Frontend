@@ -47,9 +47,11 @@ function Profile() {
             const response = await axios.post(
                 'https://blog-nest-backend.vercel.app/api/v1/users/edit-profile',
                 formData,
-                {
-                    withCredentials: true,
-                }
+               {
+        withCredentials: true, // Include credentials (cookies) in the request
+        headers: {
+          'Content-Type': 'application/json'
+        }
             );
 
             if (response.data) {
