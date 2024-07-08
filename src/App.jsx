@@ -32,7 +32,7 @@ function App() {
       //console.log(response);
       if (response.data && response.data.data) {
         dispatch(login({ userData: response.data.data }));
-       console.log(response)
+       console.log("in refresh",response)
         const postStore = await fetchPosts(); 
         postStore.map((post) => {
             dispatch(getPostData({ postData: post }));
