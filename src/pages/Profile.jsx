@@ -45,7 +45,7 @@ function Profile() {
             }
 
             const response = await axios.post(
-                'http://localhost:8000/api/v1/users/edit-profile',
+                'https://blog-nest-backend.vercel.app/api/v1/users/edit-profile',
                 formData,
                 {
                     withCredentials: true,
