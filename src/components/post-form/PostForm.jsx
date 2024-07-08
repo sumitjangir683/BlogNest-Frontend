@@ -33,8 +33,11 @@ export default function PostForm({ post }) {
               "https://blog-nest-backend.vercel.app/api/v1/post/add-post",
               formData,
               {
-                withCredentials: true 
-              }
+        withCredentials: true, // Include credentials (cookies) in the request
+        headers: {
+          'Content-Type': 'multipart/form-data'
+        }
+      }
             );
           // console.log(postData)
            console.log("Post created successfully");
