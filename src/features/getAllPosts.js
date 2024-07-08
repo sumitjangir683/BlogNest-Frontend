@@ -4,6 +4,9 @@ const getAllPosts = async () => {
     try {
       const response = await axios.post("https://blog-nest-backend.vercel.app/api/v1/post/all-posts",{}, {
         withCredentials: true 
+          headers: {
+    'Content-Type': 'application/json'
+  }
       })
       // console.log(response);
       if (response.data && response.data.data) {
