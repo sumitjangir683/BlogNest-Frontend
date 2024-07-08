@@ -2,9 +2,9 @@ import React from 'react'
 import axios from 'axios';
 const getAllPosts = async () => {
     try {
-      const response = await axios.post("https://blog-nest-backend.vercel.app/api/v1/post/all-posts",{}, {
-        withCredentials: true 
-          headers: {
+      const response = await axios.post("https://blog-nest-backend.vercel.app/api/v1/post/all-posts",{},  {
+  withCredentials: true, // Include credentials (cookies) in the request
+  headers: {
     'Content-Type': 'application/json'
   }
       })
