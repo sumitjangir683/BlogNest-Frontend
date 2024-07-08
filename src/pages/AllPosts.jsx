@@ -7,7 +7,7 @@ function AllPosts() {
     const [posts, setPosts] = useState([])
     const dispatch = useDispatch()
     const postStore = useSelector((state) => state.post_store.posts);
-   /// console.log(postStore);
+   console.log(postStore);
    const fetchPosts = async() => {
     try {
         const postStore = await getAllPosts()
