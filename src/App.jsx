@@ -30,8 +30,8 @@ function App() {
     try {
       const response = await getCurrentUser()
       console.log("in refresh",response)
-      if (response.data && response.data.data) {
-        dispatch(login({ userData: response.data.data }));
+      if (response.data) {
+        dispatch(login({ userData: response.data }));
        console.log("in refresh",response)
         const postStore = await fetchPosts(); 
         postStore.map((post) => {
