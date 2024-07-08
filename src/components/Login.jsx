@@ -39,8 +39,11 @@ function Login() {
                     password:data.password
                  },
                  {
-                    withCredentials: true 
-                 }
+        withCredentials: true, // Include credentials (cookies) in the request
+        headers: {
+          'Content-Type': 'application/json'
+        }
+      }
             )
             console.log(userData);
             if (userData) {
