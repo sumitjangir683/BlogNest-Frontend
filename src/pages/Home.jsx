@@ -7,7 +7,7 @@ import { useDispatch, useSelector} from 'react-redux';
 function Home() {
     const dispatch = useDispatch()
     const postStore = useSelector((state) => state.post_store.posts);
-    //console.log(postStore);
+  console.log(postStore);
   
     
     useEffect(() => {
