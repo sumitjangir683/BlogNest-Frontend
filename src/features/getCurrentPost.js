@@ -5,7 +5,10 @@ const getCurrentPost = async (_id) => {
    // const { _id } = useParams()
     try {
       const response = await axios.post(`https://blog-nest-backend.vercel.app/api/v1/post/post/${_id}`,{}, {
-        withCredentials: true 
+        withCredentials: true, // Include credentials (cookies) in the request
+        headers: {
+          'Content-Type': 'application/json'
+        }
       })
       // console.log(response);
       if (response.data && response.data.data) {
