@@ -42,7 +42,7 @@ function Login() {
                     withCredentials: true 
                  }
             )
-            //console.log(userData);
+            console.log(userData);
             if (userData) {
                 dispatch(authLogin({ userData: userData.data.data }));
                 const postStore = await fetchPosts(); 
