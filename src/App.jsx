@@ -29,7 +29,7 @@ function App() {
   const fetchCurrentUser = async() => {
     try {
       const response = await getCurrentUser()
-      //console.log(response);
+      console.log("in refresh",response)
       if (response.data && response.data.data) {
         dispatch(login({ userData: response.data.data }));
        console.log("in refresh",response)
