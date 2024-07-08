@@ -52,7 +52,7 @@ function Profile() {
         headers: {
           'Content-Type': 'application/json'
         }
-            );
+               });
 
             if (response.data) {
                 dispatch(login({ userData: response.data.data }));
