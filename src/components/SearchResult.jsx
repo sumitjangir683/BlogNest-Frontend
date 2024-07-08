@@ -4,7 +4,7 @@ import { useSelector,useDispatch} from 'react-redux';
 function SearchResult() {
 
     const postStore = useSelector((state) => state.post_store.searchPosts);
-    console.log(postStore);
+   // console.log(postStore);
   return (
     <div className='w-full py-8'>
             <Container>
