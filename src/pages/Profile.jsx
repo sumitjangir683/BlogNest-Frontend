@@ -14,8 +14,8 @@ function Profile() {
     const [isDialogOpen, setIsDialogOpen] = useState(false);
     const user=useSelector((state) => state.auth.userData);
     const postStore = useSelector((state) => state.post_store.posts);
-    //console.log(postStore);
-    // console.log(user);
+    console.log("in profile",postStore);
+   console.log("in profile",user);
     if (!user) {
         return <div className='flex justify-center'>Loading...</div>; 
     }
