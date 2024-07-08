@@ -50,7 +50,7 @@ function Profile() {
                {
         withCredentials: true, // Include credentials (cookies) in the request
         headers: {
-          'Content-Type': 'application/json'
+           'Content-Type': 'multipart/form-data'
         }
                });
 
