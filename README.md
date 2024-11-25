@@ -17,6 +17,7 @@ BlogNest is a web application for reading and creating blogs, with a focus on a 
 
 ## Links
 - **GitHub**: [Repository Link](https://github.com/sumitjangir683/BlogNest-Frontend)
+- **Backend Link**: [Backend](https://github.com/sumitjangir683/BlogNest-Backend)
 - **Hosted App**: [Live Link](https://blog-nest-frontend.vercel.app/)
 
 ## Installation
