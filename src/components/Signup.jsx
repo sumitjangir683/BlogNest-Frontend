@@ -60,6 +60,7 @@ function Signup() {
             })
             setLoding(false)
             navigate("/")
+            window.location.reload();
            }
             
             
