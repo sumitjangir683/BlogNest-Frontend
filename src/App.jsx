@@ -62,7 +62,10 @@ function App() {
     <Footer/>
    </div>
    </div>
-  ) : (<LoaderCircleIcon className=" animate-spin mr-6 my-auto" />)
+  ) : (<div className="flex items-center justify-center min-h-screen">
+    <LoaderCircleIcon className="animate-spin w-16 h-16" />
+  </div>
+  )
 }
 
 export default App
